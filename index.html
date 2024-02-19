@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolonialisme Jepang</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/Background.png');
+            background-size: cover; /* Untuk memastikan gambar latar belakang menutupi seluruh area body */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+            color: #333; /* Warna teks utama */
+        }
+
+        /* Animasi */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInUp;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .animated2 {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInLeft;
+        }
+
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated3 {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: fadeInDown;
+        }
+
+        br {
+            display: block;
+            content: "";
+            margin-top: 10px;
+        }
+
+        .card-body {
+            box-shadow: 2px 2px 10px #363636;
+        }
+
+        h1 {
+            background-color: #ffffff;
+            font-family: fantasy; font-size: 45px; font-style: normal; font-variant: normal; font-weight: 400;
+            border: 3px solid rgb(0, 0, 0);
+            box-shadow: 2px 2px 10px #363636;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center mb-5">Sejarah Kelas 11 | SMAN 28 Jakarta</h1>
+
+                <div id="KolonialismeJepang" class="card mb-4 animated">
+                    <div class="card-body">
+                        <h3 class="card-title">Kolonialisme Jepang</h3>
+                        <a href="https://drive.google.com/file/d/12fwHSNGfBs4Jcye5v6iPYWxabLZwUQJ_/view?usp=sharing" class="btn btn-primary" role="button">Latar Belakang</a><br>
+                        <a href="https://drive.google.com/drive/folders/15V8Pc3EMpwwQ3tXEZHd39ohGlp-b85Zw?usp=sharing" class="btn btn-primary" role="button">Romusha, Jugun Ianfu, dan Ideologi Fasisme</a><br>
+                        <button class="btn btn-primary" onclick="toggleSubSection('literasiTambahan')">Literasi Tambahan</button><br>
+                    </div>
+                </div>
+
+                <div id="literasiTambahan" class="card mb-4 animated" style="display: none;">
+                    <div class="card-body">
+                        <h3 class="card-title">Literasi Tambahan</h3>
+                        <ul>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point1')">Jepang dari Isolasi Hingga Industri</button><br>
+                                <div id="point1Buttons" style="display: none;">
+                                    <a href="https://historia.id/ekonomi/articles/jepang-dari-isolasi-hingga-industri-vq4yD" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1jpmpB3E6GKwMFF3ZQX_WP7Uxv259233x?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point2')">Orang Katolik di Masa Jepang</button><br>
+                                <div id="point2Buttons" style="display: none;">
+                                    <a href="https://historia.id/politik/articles/orang-katolik-di-masa-jepang-DLNdw" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1rHtlaz3ur-ruZmI_TqCmk86XPjDA5pIN?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point3')">Tekanan Jepang Pada Media</button><br>
+                                <div id="point3Buttons" style="display: none;">
+                                    <a href="https://historia.id/kultur/articles/tekanan-jepang-pada-media-vgXpJ" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1QG4AdsOpK89CjhQvGduO5So6jVXOP1IO?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point4')">Dari Gojira Sampai Godzilla</button><br>
+                                <div id="point4Buttons" style="display: none;">
+                                    <a href="https://historia.id/kultur/articles/dari-gojira-sampai-godzilla-vx5JP" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1O0jXfuIh5H66OV6s0bQIXiPwpSDVtebq?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point5')">Stunting dan Sejarahnya di Indonesia</button><br>
+                                <div id="point5Buttons" style="display: none;">
+                                    <a href="https://historia.id/sains/articles/stunting-dan-sejarahnya-di-indonesia-D8JbR/page/1" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1qEfyBx3IKFWH3EHwNHs5lAvir94Z1CQq?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point6')">Mengintip Kegiatan Sekolah Masa Jepang</button><br>
+                                <div id="point6Buttons" style="display: none;">
+                                    <a href="https://historia.id/kultur/articles/mengintip-kegiatan-sekolah-masa-jepang-v5WJp/page/1" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1nWAHRC4Mjd6F179SKiaJfIH204np1LOF?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point7')">Gerakan Anti Gundul Pelajar Masa Jepang</button><br>
+                                <div id="point7Buttons" style="display: none;">
+                                    <a href="https://historia.id/kultur/articles/gerakan-anti-gundul-pelajar-masa-jepang-PzWEe/page/1" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1NTBHtYmsC2c4ufyECrLyYzS687hsdXj9?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point8')">Jepang Mencekeram Pedesaan</button><br>
+                                <div id="point8Buttons" style="display: none;">
+                                    <a href="https://historia.id/politik/articles/jepang-mencengkeram-pedesaan-P3YjD" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1IN0ihslHbvmKAuK4WYVJQlwiMWMCSgIZ?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point9')">Geliat Seni Rupa Masa Pendudukan Jepang</button><br>
+                                <div id="point9Buttons" style="display: none;">
+                                    <a href="https://historia.id/kultur/articles/geliat-seni-rupa-semasa-pendudukan-negeri-sakura-P3qRw/page/1" class="btn btn-info animated3" role="button">Link Artikel</a>
+                                    <a href="https://drive.google.com/drive/folders/1sk8Aw_ZkPtzPsoH_yJWDKCja39zbNBYS?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                </div>
+                            </li>
+                            <!-- Tambahkan baris ini untuk setiap poin literasi tambahan -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Munculkan bagian Kolonialisme Jepang saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('KolonialismeJepang').style.display = 'block';
+        });
+
+        function toggleSubSection(subSectionId) {
+            var subSection = document.getElementById(subSectionId);
+            if (subSection.style.display === "none") {
+                subSection.style.display = "block";
+            } else {
+                subSection.style.display = "none";
+            }
+        }
+
+        function toggleAdditionalButtons(pointId) {
+            var buttons = document.getElementById(pointId + 'Buttons');
+            if (buttons.style.display === "none") {
+                buttons.style.display = "block";
+            } else {
+                buttons.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
