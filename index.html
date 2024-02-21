@@ -162,7 +162,10 @@
                                 <button class="btn btn-secondary animated2" onclick="toggleAdditionalButtons('point9')">Geliat Seni Rupa Masa Pendudukan Jepang</button><br>
                                 <div id="point9Buttons" style="display: none;">
                                     <a href="https://historia.id/kultur/articles/geliat-seni-rupa-semasa-pendudukan-negeri-sakura-P3qRw/page/1" class="btn btn-info animated3" role="button">Link Artikel</a>
-                                    <a href="https://drive.google.com/drive/folders/1sdwqsdak8Aw_ZkwdasdwPtzPsoH_yJWDdwasKCja39zbNBYS?usp=sharing" class="btn btn-info animated3" role="button">Hasil Karya</a><br>
+                                    <a href="#" class="btn btn-info animated3" role="button" onclick="toggleImage('image')">Hasil Karya</a><br>
+                                    <div class="image">
+                                        <img id="image" class="animated3" src="img/Poster.png" style="display: none; height: 70%; width: 70%;">
+                                    </div>
                                 </div>
                             </li>
                             <!-- Tambahkan baris ini untuk setiap poin literasi tambahan -->
@@ -199,6 +202,16 @@
                 buttons.style.display = "block";
             } else {
                 buttons.style.display = "none";
+            }
+        }
+
+        function toggleImage() {
+            event.preventDefault();
+            var img = document.getElementById("image");
+            if (img.style.display === "none") {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
             }
         }
     </script>
